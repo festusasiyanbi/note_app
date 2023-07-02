@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-</head>
-<body>
-    <p>HTML ninja template</p>
-</body>
-</html>
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+{% block content %}
+  <div style="margin-top: 10px;">
+    <h1 align="center">Notes</h1>
+    <ul class="list-group list-group-flush" id="notes">
+      {% for note in user.notes %}
+      <li class="list-group-item">
+        {{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+           <span aria-hidden="true" class="delete" title="Delete note?">&times;</span>
+        </button>
+       </li>
+      {% endfor %}
+    </ul> 
+    <form method="POST">
+      <textarea name="note" id="note" class="form-control"></textarea>
+      <br />
+      <div class="center">
+        <button type="submit" class="btn btn-primary">Add Note</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
