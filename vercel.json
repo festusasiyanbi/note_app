@@ -1,16 +1,16 @@
 {
 	"version": 2,
-	"builds": [
-	  {
-		"src": "/main.py",
-		"use": "@vercel/python"
-	  }
-	],
 	"routes": [
-	  {
-		"src": "/(.*)",
-		"dest": "/main.py"
-	  }
+	  { "src": "/static/(.*)", "dest": "/website/static/$1" },
+	  { "src": "/(.*)", "dest": "/main.py" }
+	],
+	"rewrites": [
+	  { "source": "/(.*)", "destination": "/main.py" }
+	],
+	"builds": [
+	  { "src": "/website/(.*)", "use": "@vercel/static" },
+	  { "src": "/instance/(.*)", "use": "@vercel/static" },
+	  { "src": "/(.*)", "use": "@vercel/python" }
 	]
   }
   
