@@ -1,3 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: Inter, Helvetica;
+}
+.about-section {
+    overflow: hidden;
+}
+
 .delete:hover {
     color: red;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100vw;
+    padding: 1rem 5rem;
+    background-color: red;
+}
+
+header span:first-child {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    margin-left: 5px;
+    animation: myarrow 5s linear infinite;
+}
+
+header button {
+    padding: 7px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+    border-radius: 36px;
+    background-color: red;
+}
+
+@keyframes myarrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.carousel-slide {
+    height: fit-content;
+    width: 95vw;
+    border-radius: 36px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px 0px #d2d9ff;
+}
+
+.carousel-item img {
+    height: 320px; 
+    width: 100%; 
+}
+
+.carousel-slide img {
+    border-radius: 36px;
+}
+
+.content-container {
+    width: 100vw;
+    padding: 0 2rem; 
+}
+
+.about h1 {
+    color: #2e3d48;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.app h5 {
+    margin-top: 1rem;
+}
+.card {
+    width: 30%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px 0px #d2d9ff;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+}
+
+.card-link a {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.view-project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin: 2rem 0;
+    padding-right: 1rem;
+}
+
+.view-project button {
+    padding: 7px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+    border-radius: 36px;
+    background-color: red;
+}
+
+footer {
+    width: 100vw;
+    background-color: black; 
+    color: white; 
+    display: flex; 
+    justify-content: space-around; 
+    height: 366px; 
+    align-items: center;
+}
+
+.socials p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #a2a2a2;
+    margin-bottom: 15px;
+}
+
+.icons {
+    width: 30%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.9;
+}
+
+footer span {
+    cursor: pointer;
+}
+
+footer .author {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #989898;
+}
+
+.authors h2 {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.authors span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.download-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #a2a2a2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding-top: 100px;
+}
+
+.grid-item {
+    height: 60px;
+    width: 60px;
+    background-color: #a2a2a2;
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 769px) {
+    header {
+        padding:  0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        line-height: 20px;
+        height: fit-content;
+        padding: 1rem 0.5rem;
+    }
+    header span:first-child {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+    header button {
+        font-size: 12px;
+    }
+
+    .content-container {
+        padding: 0 0.5rem;
+    }
+    .carousel-slide {
+        width: 90vw;
+    }
+    .author-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+    }
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem;
+        line-height: 30px;
+        overflow-x: hidden;
+    }
+    .authors {
+        margin: 2rem 0;
+    }
+}
+@media only screen and (min-width: 770px) and (max-width: 1023px) {
+    header {
+        padding:  0;
+        line-height: 20px;
+        height: fit-content;
+        padding: 1rem 0.5rem;
+    }
+    .arrow {
+        visibility: hidden;
+    }
 }

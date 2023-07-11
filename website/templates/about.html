@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/637fba2540.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+<body>
+    <section class="about-section">
+        <header>
+            <span> 
+                Note App developed by a group of 3 software engineering students at ALX 
+                <span class="arrow">&rarr; </span> 
+            </span>
+            <button type="button" onclick="navigateHome()">Click to view project</button>
+        </header>
+
+        <main class="content-container">
+            <div  class="carousel slide carousel-slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../static/images/Banner1.png" alt="" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../static/images/Banner2.png" alt="" class="d-block">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="about app">
+                <h1>About The Note App</h1>
+                <p>
+                    Welcome to our Web Note App, the perfect solution for 
+                    managing your notes online. With our app, you can create 
+                    an account, securely log in, and have access to your notes 
+                    anytime, anywhere. Here's a brief overview of what our app offers:
+                </p>
+                <ol>
+                    <li>
+                        <h5>Account Creation: </h5> 
+                        <ul>
+                            <li>Sign up for a new account with just a few simple steps.</li>
+                            <li>Provide your email and set a secure password to create your account.</li>
+                            <li>Once registered, you'll have your unique login credentials.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Secure Login: </h5> 
+                        <ul>
+                            <li>Log in to your account using your registered email and password.</li>
+                            <li>Our app ensures the security of your data with advanced encryption.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Note Management:</h5> 
+                        <ul>
+                            <li>Create new notes with ease, allowing you to capture your thoughts, ideas, and reminders.</li>
+                            <li>Edit your existing notes whenever you want, keeping your information up to date.</li>
+                            <li>Browse through your notes effortlessly using an intuitive and user-friendly interface.</li>
+                            <li>Delete any notes that you no longer need, maintaining a clutter-free workspace.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Persistent Storage: </h5> 
+                        <ul>
+                            <li>We understand the importance of keeping your data safe and easily accessible.</li>
+                            <li>Even if you log out of your account, all your notes will be securely stored.</li>
+                            <li>When you log back in, you'll find your notes exactly as you left them.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>
+                    Our Web Note App provides a seamless experience for managing your notes online. 
+                    Whether you're a student, professional, or anyone who values organization and 
+                    productivity, our app is here to simplify your note-taking process.
+                </p>
+                <p>
+                    Sign up today and unlock the power of digital note-taking. Experience the 
+                    convenience of accessing your notes from any device, ensuring that important 
+                    information is always at your fingertips.
+                </p>
+                <p>
+                    Get started with our Web Note App now and take control of your digital note-taking journey.
+                </p>
+            </div>
+            <div class="about author">
+                <h1>About The Authors</h1>
+                <div class="author-card-container" style="display: flex; justify-content: space-evenly;">
+                    <div class="card">
+                        <img src="../static/images/Festus.jpg" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Festus Asiyanbi</h5>
+                          <p class="card-text">
+                            A highly skilled full-stack engineer, with a strong passion 
+                            for creating user-centric web applications. Excels in front-end 
+                            engineering and possesses a keen eye for intuitive UI design. 
+                            Enjoys staying up to date with the latest tech trends 
+                            and finding inspiration in nature's beauty.
+                          </p>
+                          <div class="card-link">
+                            <a href="http://www.linkedin.com/in/festusasiyanbi">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="http://www.github.com/festusasiyanbi">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="http://www.twitter.com/festusasiyanbi">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../static/images/Smith.jpeg" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Odoh Joshua Ikechukwu</h5>
+                          <p class="card-text">
+                            A tech-savvy individual with a strong aptitude for problem-solving and a
+                             passion for innovation, equipped with extensive knowledge in various 
+                             programming languages and frameworks, poised to make significant 
+                             contributions in the dynamic world of technology.
+                          </p>
+                        <div class="card-link">
+                            <a href="https://www.linkedin.com/in/joshua-ikechukwu-27a1b424a/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/joshuaikechukwuodoh">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../static/images/Solomon.jpeg" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Odo Solomon Chinemere</h5>
+                          <p class="card-text">
+                            A tech-savvy individual with a strong 
+                            background in computer science, possessing a track record of 
+                            developing innovative solutions and a passion for staying at 
+                            the forefront of technological advancements.
+                          </p>
+                          <div class="card-link">
+                            <a href="https://www.linkedin.com/in/odo-solomon-5232b2249">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/solomon-chi">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-project">
+                <button type="button" onclick="navigateHome()">Click to view project</button>
+            </div>
+        </main>
+
+        <footer class='footer'>
+            <div class='socials'>
+              <p>Fusce ut elit aliquet, fermentum leo vel, tempus<br /> nunc. 
+                  Fusce eu rhoncus augue. Fusce vel metus <br /> pharetra, fermentum
+              </p>
+              <div class='icons'>
+                  <span><i class="fa-brands fa-linkedin"></i></span>
+                  <span><i class="fa-brands fa-github"></i></span>
+                  <span><i class="fa-brands fa-twitter"></i></span>
+              </div>
+      
+              <span class='author'> &copy; Designed by <br /> Festus Asiyanbi </span>
+            </div>
+            <div class='authors'>
+                <h2>Authors</h2>
+                <div style="display: flex; flex-direction: column;">
+                    <span>Festus Asiyanbi</span>
+                    <span>Odoh Joshua Ikechukwu</span>
+                    <span>Odoh Solomon </span>
+                </div>
+            </div>
+            <div class='download-link'> Download our app </div>
+            <div class='grid'>
+              <span class="grid-item"></span>
+              <span class="grid-item plus">+</span>
+              <span class="grid-item"></span>
+              <span class="grid-item"></span>
+              <span class="grid-item"></span>
+              <span class="grid-item"></span>
+              <span class="grid-item"></span>
+              <span class="grid-item"></span>
+            </div>
+          </footer>
+
+    </section>
+
+    <script>
+        function navigateHome() {
+            window.location.assign("/home");
+        }
+    </script>
+</body>
+</html>
