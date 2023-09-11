@@ -15,7 +15,9 @@ The Simple Note App is a web application that allows users to create an account,
 
 The Simple Note App is built using the following technologies:
 
+  - HTML
+  - CSS
   - Flask 
   - SQLALchemy
-  - HTML
+ 
 
